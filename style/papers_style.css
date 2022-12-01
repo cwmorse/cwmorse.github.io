@@ -1,0 +1,24 @@
+.paper{
+    margin-top: 30px;
+}
+.paper .link {
+    line-height:30px;
+}
+.paper .link a {
+  
+    color: black;
+}
+.paper .link a:hover {
+   
+    color: grey;
+}
+
+.paper img{
+    position: relative;
+    width:85px;
+    height:85px;
+    margin-right: 15px;
+    margin-left: 15px;
+    object-fit: cover;
+    float:left;
+}

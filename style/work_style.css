@@ -1,0 +1,59 @@
+#work-links {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    top: -30px;
+    font-size: 15px;
+}
+
+#work-links a{
+    text-decoration: none;
+    color:grey;
+    margin:10px;
+}
+
+#work-links a:hover{
+    text-decoration: underline;
+    color:black;
+}
+
+#project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+#project-list a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.project {
+    width:400px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.project:hover {
+    background-color: lightgray;
+}
+
+
+.project img {
+    padding: 10px;
+    height: 400px;
+    width:400px;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.project-data h2 {
+    margin: 15px;
+    margin-top:0px;
+    font-weight:100;
+}
+

@@ -1,0 +1,32 @@
+<div id="nav-content" class="content">
+    <div id="nav-title">
+        <a class="long" href="/index.html">CHRISTOPHER MORSE</a>
+        <a class="short" href="/index.html">CHRIS MORSE</a>
+        <p id="subtitle">computation &nbsp | &nbsp visualization &nbsp | &nbsp design</p>
+    </div>
+    <div id="nav-menu">
+        <div id="nav-menu-button">
+            <div id="bar1"></div>
+
+            <div id="bar3"></div>
+        </div>
+        <div id="nav-menu-content">
+            <a href="/pages/work.html">work</a>
+            <a href="/pages/teaching.html">teaching</a>
+            <a href="/pages/papers.html">publications</a>
+            <a href="/pages/photography.html">photography</a>
+            <a href="/pages/about.html">about</a>
+        </div>
+    </div>
+   
+</div>
+
+<script>
+    var hidden = true;
+
+    document.getElementById('nav-menu-button').onclick = function () {
+        document.getElementById('nav-menu-content').style.display = (hidden) ? 'block' : 'none';
+        document.getElementById('nav-menu-button').classList.toggle("change");
+        hidden = !hidden;
+    };
+</script>

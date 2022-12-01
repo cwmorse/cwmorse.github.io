@@ -1,0 +1,28 @@
+#photography-body {
+   / background-color: #aaaaaa;
+    min-width: 20px;
+}
+#photography-main {
+    margin-top: -100px;
+   
+}
+
+
+#photography-main h1{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+    top:200px;
+    z-index:1;
+}
+
+
+.full_image img {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    margin-top: 1px;
+  
+}

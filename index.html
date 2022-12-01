@@ -1,0 +1,130 @@
+<html>
+<head>
+    <script src="/scripts/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" type="text/css" href="/three.css">
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <div id="nav"> </div>
+
+    <div id="main-content" class="content">
+        <!--<hr style="width:450px; margin:0px 25px; border-color:#939393; " />-->
+        <div class="home-element" id="work">
+            <div class="home-element-inner">work <a href="/pages/work.html"><img src="resources/images/projects/SuspendedHabitation1.jpg" /></a></div>
+        </div>
+        <div class="home-element">
+            <br />
+            <div class="home-element-inner textbox">
+
+                <p>welcome</p>
+
+                <p>i work at the intersection of computation, visualization, and design, with a focus on emerging immersive technologies of AR and VR </p>
+                <p>in my spare time i also teach VR and AR technologies to architecture students </p>
+
+            </div>
+        </div>
+        <div class="home-element" id="teaching_">
+            <div class="home-element-inner">teaching <a href="/pages/teaching.html"><img src="/resources/images/teaching/CornellFall2020_2.jpg" /></a></div>
+        </div>
+        <div class="home-element" id="papers">
+            <div class="home-element-inner">publications <a href="/pages/papers.html"><img src="resources/images/papers/ConstructionRobotics.jpg" /></a></div>
+        </div>
+        <div class="home-element" id="photography">
+            <div class="home-element-inner">photography <a href="/pages/photography.html"><img src="resources/images/photography/CentralPark1.jpg" /></a></div>
+        </div>
+
+        <div class="home-element" id="about">
+            <div class="home-element-inner">about <a href="/pages/about.html"><img src="resources/images/test2.jpg" /></a></div>
+        </div>
+
+    </div>
+    <div id="three">
+        <canvas id="c">Hello</canvas>
+        <div id="pause" type="button"><img src="resources/icons/pause-white.png" /></div>
+    </div>
+        
+    <div id="footer"></div>
+</body>
+<script>
+    $("#nav").load("/pages/nav.html");
+    $("#footer").load("/pages/footer.html");
+
+    $('#photography').mousemove(
+        function () {
+           
+            var mouseX = event.pageX;
+            var positionFactor = (event.pageX - this.offsetLeft) / this.offsetWidth;
+            var img = $(this).find('img');
+
+            let imageList = [
+                'CentralPark1.jpg',
+                'CentralPark2.jpg',
+                'SenecaLake1.jpg',
+                'SenecaLake2.jpg',
+                'FallLeaves.jpg'
+            ]
+
+            var imageIndex = Math.floor(positionFactor * imageList.length)
+            img.attr('src', '/resources/images/photography/'+ imageList[imageIndex]);
+        });
+
+    $('#papers').mousemove(
+        function () {
+           
+            var mouseX = event.pageX;
+            var positionFactor = (event.pageX - this.offsetLeft) / this.offsetWidth;
+            //console.log(positionFactor);
+            var img = $(this).find('img');
+
+            let imageList = [
+                'ConstructionRobotics.jpg',
+                'ScopeBox.png',
+                'SoundSpace.png',
+                'vSpline.jpg',
+                'SoundWave3.png',
+                'Toplighting.png',
+                'BIMEnabledAR.png'
+            ]
+
+            var imageIndex = Math.floor(positionFactor * imageList.length)
+            img.attr('src', '/resources/images/papers/' + imageList[imageIndex]);
+    });
+
+    $('#teaching_').mousemove(
+        function () {
+
+            var mouseX = event.pageX;
+            var positionFactor = (event.pageX - this.offsetLeft) / this.offsetWidth;
+            var img = $(this).find('img');
+
+            let imageList = [
+                'CornellFall2020_1.jpg',
+                'CornellFall2020_2.jpg'
+            ]
+
+            var imageIndex = Math.floor(positionFactor * imageList.length)
+            img.attr('src', '/resources/images/teaching/' + imageList[imageIndex]);
+        });
+    $('#work').mousemove(
+        function () {
+
+            var mouseX = event.pageX;
+            var positionFactor = (event.pageX - this.offsetLeft) / this.offsetWidth;
+            var img = $(this).find('img');
+
+            let imageList = [
+              
+                'SuspendedHabitation1.jpg',
+                'Thesis1.jpg',
+                'Urchin1.png',
+                'AR1.jpg',
+                'vSpline1.jpg'
+            ]
+
+            var imageIndex = Math.floor(positionFactor * imageList.length)
+            img.attr('src', '/resources/images/projects/' + imageList[imageIndex]);
+        });
+</script>
+<script type="module" src="Test.js"></script>
+
+</html>

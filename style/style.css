@@ -1,0 +1,266 @@
+:root {
+    --nav-height: 100px;
+    --content-max-width: 1000px;
+}
+
+body {
+    font-family: Roboto, Helvetica, sans-serif;
+    font-weight: 100;
+    min-width: 600px;
+    margin: 0;
+    //background-color: black;
+    //color: white;
+}
+
+.content {
+    max-width: var( --content-max-width);
+    margin: auto;
+}
+
+#nav {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 4px 40px 0px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+#nav-content {
+   position: relative;
+   top:25px;
+   height: var(--nav-height);
+}
+#nav-title {
+    float: left;
+    margin-left: 30px;
+    font-size: 40px;
+    font-weight: 300;
+    width: 60%;
+}
+#nav-title a {
+    color: black;
+    text-decoration: none;
+}
+#subtitle {
+    font-size: 15px;
+    font-weight: 100;
+    margin-top: 0px;
+}
+
+#nav-menu {
+    float: right;
+    margin-right: 30px;
+}
+
+#nav-menu a {
+    margin: 10px;
+    color: #666666;
+    text-decoration: none;
+}
+#nav-menu  a:hover {
+    color: black;
+}
+#nav-menu  a:active {
+    text-decoration: underline;
+    color: black;
+}
+
+
+
+#nav-menu-button {
+    float: right;
+    cursor: pointer;
+}
+
+#nav-menu-button div{
+    width: 40px;
+    height: 4px;
+    background-color: black;
+    margin: 12px 0;
+    border-radius: 2px;
+    transition: 0.4s;
+    
+}
+
+/* Rotate first bar */
+.change #bar1 {
+    -webkit-transform: rotate(45deg) translate(6px, 6px);
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+/* Rotate last bar */
+.change #bar3 {
+    -webkit-transform: rotate(-45deg) translate(6px, -6px);
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+
+#nav-menu-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 70px;
+    right: 0px;
+    min-width: 160px;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+    #nav-menu-content a {
+       
+        display: block;
+        font-weight: 300;
+        height: 25px;
+        text-align: right;
+    }
+
+
+
+/*
+#nav-menu:hover #nav-menu-content{
+    display: block;
+}
+*/
+
+#main-content {
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+}
+
+.secondary {
+  
+    margin-top: 150px;
+ 
+}
+
+
+.content h1 {
+    font-weight: 200;
+    text-align: center;
+    margin-bottom:50px;
+}
+
+.home-element 
+{
+    font-weight:100;
+    font-size:20px;
+    width: 500px;    
+}
+.home-element-inner {
+   margin: 25px;
+   
+}
+.home-element-inner img {
+    width: 100%;
+    height: 450px;
+    object-fit:cover;
+    border-radius: 0%;
+    transition-property: border-radius;
+    transition-duration: 0.2s;
+    opacity: 0.8;
+    /box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.9);
+    border-radius: 10%;
+    filter: saturate(80%);
+}
+.home-element-inner img:hover {
+    cursor: pointer;
+    filter: saturate(100%);
+    opacity: 1;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.9);
+    border-radius: 0%;
+   
+}
+
+.textbox {
+    font-weight: 300;
+    padding: 30px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    background-color: rgba(255,255,255,0.999);
+    font-size: 16px;
+    color: black;
+}
+
+#about-page {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#about-page img{
+    float:left;
+}
+
+
+#headshot {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 200px;
+
+}
+
+
+/*
+---------------
+    FOOTER
+--------------
+*/
+#footer {
+    /background-color: blue;
+    margin-bottom: 100px;
+    color: white;
+}
+
+#footer-content {
+    display: flex;
+    flex-direction: column;
+    margin-top:100px;
+    padding-right:30px;
+    
+}
+
+#social {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+
+#copyright {
+    margin-left: auto;
+    margin-right: 0;
+    margin-top:20px; 
+    font-size: 10px;
+}
+
+
+#social img {
+      
+    width: 40px;
+    filter: grayscale();
+}
+#social img:hover{
+    filter: none;
+}
+
+.long {
+    display: block;
+}
+.short { 
+    display: none;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .long {
+        display: none;
+    }
+
+    .short {
+        display: block;
+    }
+}
