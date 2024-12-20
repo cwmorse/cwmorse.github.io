@@ -13,10 +13,10 @@
             <br />
             <div class="home-element-inner textbox">
 
-                <p>welcome!</p>
+                <p>welcome</p>
 
                 <p>i work at the intersection of computation, visualization, and design, with a focus on emerging immersive technologies of ar and vr </p>
-                <p>in my spare time i also teach vr and ar technologies to architecture students </p>
+                <p>in my spare time i sometimes teach vr and ar technologies to architecture students </p>
 
             </div>
         </div>
@@ -79,6 +79,7 @@
 
             let imageList = [
                 'ConstructionRobotics.jpg',
+                'ErgoReality.png',
                 'ScopeBox.jpg',
                 'SoundSpace.jpg',
                 'vSpline.jpg',
@@ -124,6 +125,24 @@
 
             var imageIndex = Math.floor(positionFactor * imageList.length)
             img.attr('src', '/resources/images/projects/' + imageList[imageIndex]);
+        });
+    $('#about').mousemove(
+        function () {
+
+            var mouseX = event.pageX;
+            var positionFactor = (event.pageX - this.offsetLeft) / this.offsetWidth;
+            var img = $(this).find('img');
+
+            let imageList = [
+              
+                'test2.jpg',
+                'projects/Thesis1.jpg',
+                'cm_headshot.png'
+                
+            ]
+
+            var imageIndex = Math.floor(positionFactor * imageList.length)
+            img.attr('src', '/resources/images/' + imageList[imageIndex]);
         });
 </script>
 <script type="module" src="Test.js"></script>
