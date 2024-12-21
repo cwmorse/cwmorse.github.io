@@ -39,7 +39,7 @@ body {
     margin-left: 30px;
     font-size: 40px;
     font-weight: 300;
-    width: 60%;
+    /* width: 60%; */
 }
 #nav-title a {
     color: #b9b9b9;
@@ -51,6 +51,7 @@ body {
     font-weight: 100;
     margin-top: 0px;
     color:grey;
+    min-width: 300px;
 }
 
 #nav-menu {
@@ -259,14 +260,33 @@ body {
 .short { 
     display: none;
 }
+.very_short {
+    display: none;
+}
 
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 615px) and (min-width: 500px) {
     .long {
         display: none;
     }
 
     .short {
+        display: block;
+    }
+
+    .very_short {
+        display: none;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .long {
+        display: none;
+    }
+
+    .short {
+        display: none;
+    }
+
+    .very_short {
         display: block;
     }
 }
