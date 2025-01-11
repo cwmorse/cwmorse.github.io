@@ -18,7 +18,13 @@
     width:85px;
     height:85px;
     margin-right: 15px;
-    margin-left: 15px;
+    margin-left: 0px;
     object-fit: cover;
     float:left;
+}
+
+
+
+.content{
+    margin-left: 20px;
 }

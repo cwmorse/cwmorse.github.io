@@ -55,8 +55,10 @@ body {
 }
 
 #nav-menu {
-    float: right;
-    margin-right: 30px;
+    /* float: right; */
+    position: absolute;
+    right: 30px;
+    /* margin-right: 00px; */
 }
 
 #nav-menu a {
@@ -194,12 +196,17 @@ body {
 }
 
 #about-page {
-    width: 600px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
 #about-page img{
-    float:left;
+    /* float:left; */
+}
+
+#about_description{
+    max-width: 600px;
+    margin: 50px;
 }
 
 

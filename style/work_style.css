@@ -32,7 +32,8 @@
 
 
 .project {
-    width:400px;
+    min-width:200px;
+    max-width: 400px;
     margin: 10px;
     border: 1px solid black;
     border-radius: 10px;
@@ -45,8 +46,8 @@
 
 .project img {
     padding: 10px;
-    height: 400px;
-    width:400px;
+    /* height: 400px; */
+    width:100%;
     box-sizing: border-box;
     object-fit: cover;
 }
