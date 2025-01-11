@@ -36,8 +36,7 @@
     max-width: 200px;
     margin: 0px;
     overflow: hidden;
-   
-    
+
 }
 
 .project:hover img{
@@ -53,15 +52,18 @@
     box-sizing: border-box;
     object-fit: cover;
     transition: .2s ease;
-    
-   
 }
 
+/* .project:hover .project-data h2{
+    display: block;
+} */
+
 .project-data h2 {
-    display: none;
-    margin: 15px;
-    margin-top:0px;
-    font-weight:100;
+    /* position: absolute; */
+    top:-20px;
+    right:0px;
+    /* height:100px;
+    font-weight:100; */
 }
 
 .content{
